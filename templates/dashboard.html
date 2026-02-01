@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyHub | Learn Smarter</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #4facfe;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            padding: 60px 40px;
+            text-align: center;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 16px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #3a8edb;
+        }
+
+        .dashboard {
+            padding: 40px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #777;
+        }
+
+        .card p {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 10px 0 0;
+            color: #4facfe;
+        }
+
+        .lessons {
+            margin-top: 40px;
+        }
+
+        .lesson {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lesson span {
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📘 StudyHub</h1>
+    <nav>
+        <a href="/login">Login</a>
+        <a href="/signup">Sign Up</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Learn. Practice. Grow.</h2>
+    <p>Your personal study hub to track lessons, XP, and mastery.</p>
+    <button onclick="location.href='/signup'">Get Started</button>
+</section>
+
+<section class="dashboard">
+    <h2>Your Progress</h2>
+
+    <div class="stats">
+        <div class="card">
+            <h3>XP</h3>
+            <p>1240</p>
+        </div>
+        <div class="card">
+            <h3>Level</h3>
+            <p>8</p>
+        </div>
+        <div class="card">
+            <h3>Lessons Completed</h3>
+            <p>42</p>
+        </div>
+        <div class="card">
+            <h3>Study Streak (days)</h3>
+            <p>6</p>
+        </div>
+    </div>
+
+    <div class="lessons">
+        <h2>Current Lessons</h2>
+
+        <div class="lesson">
+            <span>📗 C Programming Basics</span>
+            <span>80%</span>
+        </div>
+
+        <div class="lesson">
+            <span>📘 Physics: Electricity</span>
+            <span>55%</span>
+        </div>
+
+        <div class="lesson">
+            <span>📙 Mathematics: Quadratics</span>
+            <span>100%</span>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 StudyHub • Learn smarter every day
+</footer>
+
+</body>
+</html>
